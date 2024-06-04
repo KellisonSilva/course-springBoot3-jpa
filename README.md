@@ -5,3 +5,6 @@ Diagram:
 ![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/e6ea2e95-7128-4866-bb5e-2d5f9814f5b7)
 
 
+Informations:
+Open-in-view=true: Permite que o jackson no momento da serializacao do json busque os pedidos do usuario acionando o JPA trazer esses pedidos do banco de dados.
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/21e77fd0-77f8-4315-983d-b0a27a79cca1)
