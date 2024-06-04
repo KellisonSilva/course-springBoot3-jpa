@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,10 +28,13 @@ public class User implements Serializable {
 	private String phone;
 	private String password;
 
-	/*map OnetoMany caso queira os orders do user*/
+	/*looping foi pelo Jackson biblioteca que faz a serializacao, por ter uma associacao de mao dupla
+	 @JsonIgnore*/
+	@JsonIgnore
+	/* map OnetoMany caso queira os orders do user */
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
-	
+
 	public User() {
 	}
 
@@ -79,7 +85,7 @@ public class User implements Serializable {
 	public List<Order> getOrders() {
 		return orders;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -96,6 +102,5 @@ public class User implements Serializable {
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
-
 
 }
