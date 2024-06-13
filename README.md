@@ -27,3 +27,18 @@ Associacao @ManytoMany / @mappedBy
 @JsonIgnore evitando loop
 
 ![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/97b8e7da-bbbb-4321-b610-6aeb0e346153)
+
+Conceito e utilizacao de @Embeddable e @Embedded
+
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/5ac376ea-a0aa-4991-aa97-64d479035fbc)
+
+
+Criacao de Uma terceira classe "embutida" para referenciar a classe Produto e Pedido (OrderItemPK) 
+
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/0a5a8c12-bbdc-40dc-be83-386a68410d48)
+
+Tabela criada H2 console
+
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/2de7f2df-46dd-44f6-8301-b3df4a9bd299)
+
+
