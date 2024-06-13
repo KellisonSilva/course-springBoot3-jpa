@@ -18,3 +18,12 @@ Anotacao de formatacao para garatir que o instant seja mostrado no json no model
 Untying associacao multipla
 
 ![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/97d11e0a-8239-4f31-89ef-d02032c8f0ef)
+
+Associacao @ManytoMany / @mappedBy
+
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/50fb63a5-864e-4883-be2c-f43665cb38aa)
+
+
+@JsonIgnore evitando loop
+
+![Screenshot](https://github.com/KellisonSilva/course-springBoot3-jpa/assets/45300498/97b8e7da-bbbb-4321-b610-6aeb0e346153)
