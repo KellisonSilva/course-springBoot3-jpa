@@ -25,7 +25,7 @@ public enum OrderStatus {
 			if(value.getCode() == code) {
 				return value;
 			}
-			throw new IllegalArgumentException("Invalid OrderStatus Code");
+			///throw new IllegalArgumentException("Invalid OrderStatus Code");
 		}
 		return null;
 	}
