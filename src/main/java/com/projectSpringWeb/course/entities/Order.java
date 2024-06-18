@@ -35,13 +35,16 @@ public class Order implements Serializable {
 
 	private Integer orderStatus;
 
-	/* associacao muitos pra um */
 	@ManyToOne
-	/* nome referente a coluna de foreing key nessa associacao */
+	/*@see nome referente a coluna de foreing key nessa associacao*/
 	@JoinColumn(name = "client_id")
 	private User client;
 	
-	@OneToMany(mappedBy = "id.order", fetch = FetchType.EAGER)
+	
+	/*@see ao fazer o get no postman aparecia um erro 500 server error, 
+	 *ao incluir essa anotacao (espero que seja isso) recebi o
+	 *resultado que estava esperando*/
+	@OneToMany(mappedBy = "id.order", fetch = FetchType.LAZY)
 	private Set<OrderItem> items = new HashSet<>();
 
 	public Order() {

@@ -20,7 +20,8 @@ import com.projectSpringWeb.course.repositories.OrderRepository;
 import com.projectSpringWeb.course.repositories.ProductRepository;
 import com.projectSpringWeb.course.repositories.UserRepository;
 
-/*classe de configuracao, nunca tinha usado, agiliza bastante.*/
+/**@see
+ *classe de configuracao, nunca tinha usado, agiliza bastante.*/
 
 @Configuration
 @Profile("test")

@@ -2,10 +2,12 @@ package com.projectSpringWeb.course.entities;
 
 import java.io.Serializable;
 import java.util.Objects;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.projectSpringWeb.course.entities.Pk.OrderItemPK;
+
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
